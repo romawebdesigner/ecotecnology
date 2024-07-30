@@ -1,0 +1,738 @@
+
+
+* { box-sizing: border-box; }
+
+
+body, h1, h2, p, figure {
+    margin: 0;
+    padding: 0;
+}
+
+img { max-width: 100%; }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {text-decoration: none;}
+
+
+
+.topo {
+    text-align: center;
+    padding-top: 15px;}
+
+
+h1, .menu { text-transform: uppercase; }
+
+
+
+.menu {
+    margin-top: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items:justify;
+}
+
+
+.menu a { 
+    color: rgb(0, 128, 55);
+    font-weight: bold;
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    transition: 500ms;
+}
+
+.menu a:hover, .menu a:focus {
+    background-color: rgb(240, 250, 245);
+}
+
+
+
+
+
+@media screen and (min-width: 600px) {
+    .topo{
+        padding-top: 0; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .menu{
+        margin-top: 0;
+        width: 65%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    h1 { font-size: 30px; }
+    .topo { height: 85px; }
+    .menu { width: 70%; }
+    .destaque { height: 550px; }
+    p { font-size: 20px;}
+}
+
+
+@media screen and (min-width: 1000px) {
+    .limitador {
+        max-width: 1000px;
+        margin: auto;
+}
+}
+
+
+
+
+
+
+
+
+.destaque {
+    background-image: url(../imagens/fundo\ destaque.png);
+    height: 500px;
+    color: white;
+    text-align: center;
+
+   
+    background-attachment: fixed;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+.destaque { 
+    color: white;
+    font-size: 60px; 
+    animation-name: aparecer;
+    animation-duration: 2s;
+    
+}
+
+.destaque p { 
+    font-size: 40px; 
+    font-weight: bold;
+    animation-name: aparecer;
+    animation-duration: 2s;
+
+    
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+}
+
+
+@keyframes aparecer {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+@keyframes anima-cores {
+    from { color: white; }
+    to { color: rgb(0, 128, 32); }
+}
+
+
+@keyframes caindo {
+    from { transform: translateY(-1000px); }
+    to { transform: translateY(0); }
+}
+
+
+
+
+
+article h2 {
+    text-align: center;
+    font-family: arial, sans-serif;
+    padding: auto;
+    color:rgb(4, 114, 42);
+}
+
+
+.reciclagem {
+    padding: 50px;  
+    font-family: Arial, sans-serif; 
+    color:rgb(4, 114, 42);
+    text-align: justify;
+    padding: auto;
+}
+
+.pecas {
+    color:rgb(4, 114, 42);
+    text-align: center;
+    padding: 5px;    
+}
+
+
+.reciclar p {
+    padding: 5px;
+    text-align: justify;
+    font-family: Arial, sans-serif; 
+    color:rgb(4, 114, 42);
+    text-align: justify; 
+
+}
+
+
+
+
+
+
+
+.quem_somos {
+    background-image: url(../imagens/quem.png);
+    height: 500px;
+    color: white;
+    text-align: center;
+
+    background-attachment: fixed;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.quem_somos p { 
+    font-size: 35px;
+    animation-name: aparecer;
+    animation-duration: 2s;
+    font-weight: bold;
+    animation-name: aparecer;
+    animation-duration: 2s;
+
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+}
+
+
+@keyframes aparecer {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+@keyframes anima-cores {
+    from { color: white; }
+    to { color: rgb(0, 128, 32); }
+}
+
+
+@keyframes caindo {
+    from { transform: translateY(-1000px); }
+    to { transform: translateY(0); }
+}
+ 
+ 
+
+
+.quem {
+    font-family: Arial,sans-serif;
+    font-size: medium;
+    color:rgb(4, 114, 42);
+    text-align: justify;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: auto;
+    
+}
+
+.quem h2 {
+    text-align: center;
+}
+.nossa {
+    font-family: Arial,sans-serif;
+    font-size: medium;
+    color:rgb(4, 114, 42);
+    padding: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.fazemos li{
+    font-family: Arial,sans-serif;
+    font-size: larger;    
+    color:rgb(4, 114, 42);
+    padding: auto;
+} 
+
+.valores li {
+    font-family: Arial,sans-serif;
+    font-size: larger;    
+    color:rgb(4, 114, 42);
+    padding: auto;
+}
+
+
+.beneficios li{
+    font-family: Arial,sans-serif;
+    font-size: larger;    
+    color:rgb(4, 114, 42);
+    padding: auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+.meioambiente{
+    background-image: url(../imagens/ambientebanner.png);
+    height: 500px;
+    color: white;
+    text-align: center;
+
+  
+    background-attachment: fixed;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    }
+
+
+.meioambiente p { 
+    font-size: 35px;
+    animation-name: aparecer;
+    animation-duration: 2s;
+    font-weight: bold;
+    animation-name: aparecer;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+}
+
+
+
+@keyframes aparecer {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+
+@keyframes anima-cores {
+    from { color: white; }
+    to { color: rgb(0, 128, 32); }
+}
+
+
+@keyframes caindo {
+    from { transform: translateY(-1000px); }
+    to { transform: translateY(0); }
+}
+
+
+
+
+.cenario {
+    padding: 5px;
+    font-family: Arial, sans-serif; 
+    color:rgb(4, 114, 42);
+    text-align: center; 
+    font-size: medium;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.cenario p {
+    padding: 5px;
+    text-align: justify;
+    font-family: Arial, sans-serif; 
+    color:rgb(4, 114, 42);     
+}
+
+.volumer {
+    padding: 5px;
+    text-align: justify;
+    font-family: Arial, sans-serif; 
+    color:rgb(4, 114, 42);
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.legislacao {
+    padding: 5px;
+    text-align: justify;
+    font-family: Arial, sans-serif; 
+    color:rgb(4, 114, 42);
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.infraestrutura {
+    padding: 5px;
+    text-align: justify;
+    font-family: Arial, sans-serif; 
+    color:rgb(4, 114, 42);
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.perspectivas {
+    padding: 5px;
+    text-align: justify;
+    font-family: Arial, sans-serif; 
+    color:rgb(4, 114, 42);
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+
+
+
+
+
+    
+
+
+
+ 
+.ambiente {
+    text-align: center;
+    color: white;
+    text-align: center;
+    background-image: url(../imagens/fundo\ video.png);
+    height: 500px;
+    
+
+    
+     background-attachment: fixed;
+    }
+
+    .ambiente iframe {
+        width: 100%;
+        max-width: 650px;}
+
+.ambiente h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+
+
+
+
+
+.servicos {
+    background-image: url(../imagens/servicos.png);
+    height: 500px;
+    color: white;
+    text-align: center;
+
+  
+    background-attachment: fixed;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.servicos p { 
+    font-size: 35px;
+    animation-name: aparecer;
+    animation-duration: 2s;
+    font-weight: bold;
+    animation-name: aparecer;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+}
+
+
+
+
+.galeria-de-fotos img {
+    border-radius: 100%; 
+    transform: scale(0.9) rotate(-20deg);
+    box-shadow: rgb(1, 78, 12) 0 0 10px;
+    transition: 0.5s;
+    opacity: 0.9; 
+    border-image-width: auto;
+    height: 250px;
+    
+}
+
+.galeria-de-fotos img:hover {
+    transform: scale(1);
+    opacity: 1;
+    padding: auto;   
+}
+
+.figure {
+    align-items: center;
+    padding: 10px;
+    padding-left: 12%;
+    padding-top: 2%;
+}
+
+
+.titulogaleria {
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 3px
+    
+}
+
+
+.sabe {
+    font-family: Arial,sans-serif;
+    font-size: medium;
+    color:rgb(4, 114, 42);
+    text-align: center; 
+    padding-top: 4%;
+    margin-left: 2%;
+    margin-right: 2%;
+   
+}
+
+
+.comprovante {
+    padding-top: 4%;
+    font-family: Arial,sans-serif;
+    font-size: medium;
+    color:rgb(4, 114, 42);
+    text-align: center; 
+}
+
+
+.coleta {
+    font-family: Arial,sans-serif;
+    font-size: medium;
+    color:rgb(4, 114, 42);
+    text-align: center; }
+
+.descarte {
+        font-family: Arial,sans-serif;
+        font-size: medium;
+        color:rgb(4, 114, 42);
+        text-align: center; }
+       
+.parceria {
+font-family: Arial,sans-serif;
+font-size: medium;
+color:rgb(4, 114, 42);
+text-align: center; }
+           
+.pilhas {
+    font-family: Arial,sans-serif;
+    font-weight: bold;
+    color:rgb(4, 114, 42);
+    text-align: center;
+    font-size: medium; 
+
+}
+
+
+
+
+
+
+
+@keyframes aparecer {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+@keyframes anima-cores {
+    from { color: white; }
+    to { color: rgb(0, 128, 32); }
+}
+
+
+@keyframes caindo {
+    from { transform: translateY(-1000px); }
+    to { transform: translateY(0); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.localizacao { 
+    font-family: Arial, sans-serif; 
+    color:rgb(4, 114, 42);
+    text-align: center; }
+
+.localizacao iframe { width: 100%; }
+
+.rodape {
+    background-color: rgb(4, 114, 42);
+    color: white;
+    height: 200px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    padding: 04px;
+
+}
+
+.escuro{
+    background-color:#034928;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+.conteudo-da-pagina {
+    background-color: #ecebeb;
+    border-radius: 10px;
+    width: 98%;
+    margin: auto;
+}
+
+
+table {
+    border: solid 4px;
+    width: 80%;
+    margin: auto;
+    max-width: 600px;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.conteudo {
+    font-size: larger;
+    color: rgb(4, 114, 42);
+}
+
+.se {
+    font-size: larger;
+    color: rgb(4, 114, 42);
+    text-align: center;
+    font-weight: medium;
+}
+
+
+
+.contactar {
+    background-color: rgb(255, 255, 255);
+    font-weight:lighter;
+    text-align: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: rgb(4, 114, 42);
+    padding: 04px;
+}
+
+
+form {
+    background-color: #047013;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+#nome, #email, #telefone, #assunto, #mensagem {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    padding: 4px;
+      
+}
+
+#mensagem { height: auto; 
+    color: white; }
+
+#enviar {
+    background-color: rgb(66, 10, 170);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    align-items: center;
+}
+
+#enviar:hover, #enviar:focus {
+    background-color: rgb(245, 177, 31);
+}
+
+.canais {
+    font-family: Arial,sans-serif;
+    font-size: medium;
+    color:rgb(4, 114, 42);
+    text-align: center; 
+    padding: 4px;
+    margin-left: 2%;
+    margin-right: 2%;
+    
+
+}
